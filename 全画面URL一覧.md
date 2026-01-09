@@ -48,10 +48,10 @@
 | **ユーザー** | 管理者 |
 | **デバイス** | PC対応（Responsive） |
 
-### アカウント発行 (Account Issuance)
+### アカウント発行 (Account Issuance Modal)
 | 項目 | 内容 |
 |------|------|
-| **アプリ URL** | `/admin/accounts/new` |
+| **アプリ URL** | `/admin/accounts` (モーダルで表示) |
 | **Figma Design** | https://www.figma.com/design/mjSOs02H4hqf9kIsiFlm4e/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3?node-id=381-44244&t=h1plxwLq1DP5umKv-0 |
 | **API** | `POST /api/admin/accounts` |
 | **ユーザー** | 管理者 |
@@ -140,7 +140,7 @@
 ### お客様作成 (Customer Creation Modal)
 | 項目 | 内容 |
 |------|------|
-| **アプリ URL** | `/operator/customers/new` (モーダル) |
+| **アプリ URL** | `/operator/customers` (モーダルで表示) |
 | **Figma Design** | https://www.figma.com/design/mjSOs02H4hqf9kIsiFlm4e/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3?node-id=414-41122&t=q71JbxSPjtZZ7HBO-0 |
 | **API** | `POST /api/operator/customers` |
 | **ユーザー** | オペレータ、パートナー、コンシェルジュ |
@@ -149,7 +149,7 @@
 ### お客様作成・編集 - パートナー版 (Customer Create/Edit - Partner Modal)
 | 項目 | 内容 |
 |------|------|
-| **アプリ URL** | `/partner/customers/new`, `/partner/customers/:id/edit` (モーダル) |
+| **アプリ URL** | `/partner/customers` (モーダルで表示) |
 | **Figma Design** | https://www.figma.com/design/mjSOs02H4hqf9kIsiFlm4e/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3?node-id=418-58039&t=q71JbxSPjtZZ7HBO-0 |
 | **API** | `POST /api/partner/customers`<br>`PUT /api/partner/customers/{id}` |
 | **ユーザー** | パートナー加盟店 |
@@ -216,7 +216,7 @@
 ### 案件作成・編集 - オペレーター版 (Case Create/Edit - Operator Modal)
 | 項目 | 内容 |
 |------|------|
-| **アプリ URL** | `/operator/cases/new`, `/operator/cases/:id/edit` (モーダル) |
+| **アプリ URL** | `/operator/cases` (モーダルで表示) |
 | **Figma Design** | https://www.figma.com/design/mjSOs02H4hqf9kIsiFlm4e/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3?node-id=414-40674&t=q71JbxSPjtZZ7HBO-0 |
 | **API** | `POST /api/operator/cases` (新規作成)<br>`POST /api/operator/cases/{id}/draft` (下書き保存)<br>`PUT /api/operator/cases/{id}` (更新) |
 | **ユーザー** | オペレータ |
@@ -225,7 +225,7 @@
 ### 案件作成・編集 - パートナー版 (Case Create/Edit - Partner Modal)
 | 項目 | 内容 |
 |------|------|
-| **アプリ URL** | `/partner/cases/new`, `/partner/cases/:id/edit` (モーダル) |
+| **アプリ URL** | `/partner/cases` (モーダルで表示) |
 | **Figma Design** | https://www.figma.com/design/mjSOs02H4hqf9kIsiFlm4e/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3?node-id=418-53246&t=q71JbxSPjtZZ7HBO-0 |
 | **API** | `POST /api/partner/cases` (新規作成)<br>`POST /api/partner/cases/{id}/draft` (下書き保存)<br>`PUT /api/partner/cases/{id}` (更新) |
 | **ユーザー** | パートナー加盟店 |
@@ -287,7 +287,7 @@
 ### パートナー加盟店登録・編集 (Partner Store Registration/Edit Modal)
 | 項目 | 内容 |
 |------|------|
-| **アプリ URL** | `/admin/partners/new`, `/admin/partners/:id/edit` (モーダル) |
+| **アプリ URL** | `/admin/partners` (モーダルで表示) |
 | **Figma Design** | - |
 | **API** | `POST /api/admin/partners` (新規登録)<br>`PUT /api/admin/partners/{id}` (編集) |
 | **ユーザー** | 管理者 |
@@ -318,7 +318,7 @@
 ### コンシェルジュ登録・編集 (Concierge Registration/Edit Modal)
 | 項目 | 内容 |
 |------|------|
-| **アプリ URL** | `/partner/concierges/new`, `/partner/concierges/:id/edit` (モーダル) |
+| **アプリ URL** | `/partner/concierges` (モーダルで表示) |
 | **Figma Design** | - |
 | **API** | `POST /api/partner/concierges` (新規登録)<br>`PUT /api/partner/concierges/{id}` (編集) |
 | **ユーザー** | パートナー加盟店 |
@@ -358,7 +358,7 @@
 ### サービス登録・編集 (Service Registration/Edit Modal)
 | 項目 | 内容 |
 |------|------|
-| **アプリ URL** | `/admin/services/new`, `/admin/services/:id/edit` (モーダル) |
+| **アプリ URL** | `/admin/services` (モーダルで表示) |
 | **Figma Design** | https://www.figma.com/design/mjSOs02H4hqf9kIsiFlm4e/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3?node-id=390-36069&t=h1plxwLq1DP5umKv-0 |
 | **API** | `POST /api/admin/services` (新規登録)<br>`PUT /api/admin/services/{id}` (編集) |
 | **ユーザー** | 管理者 |
@@ -376,7 +376,7 @@
 ### サポート種別登録・編集 (Support Type Registration/Edit Modal)
 | 項目 | 内容 |
 |------|------|
-| **アプリ URL** | `/admin/master/support-types/new`, `/admin/master/support-types/:id/edit` (モーダル) |
+| **アプリ URL** | `/admin/master/support-types` (モーダルで表示) |
 | **Figma Design** | https://www.figma.com/design/mjSOs02H4hqf9kIsiFlm4e/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3?node-id=570-39752&t=q71JbxSPjtZZ7HBO-0 |
 | **API** | `POST /api/admin/master/support-types` (新規登録)<br>`PUT /api/admin/master/support-types/{id}` (編集) |
 | **ユーザー** | 管理者 |
@@ -394,7 +394,7 @@
 ### サービス種別登録・編集 (Service Category Registration/Edit Modal)
 | 項目 | 内容 |
 |------|------|
-| **アプリ URL** | `/admin/master/service-types/new`, `/admin/master/service-types/:id/edit` (モーダル) |
+| **アプリ URL** | `/admin/master/service-types` (モーダルで表示) |
 | **Figma Design** | https://www.figma.com/design/mjSOs02H4hqf9kIsiFlm4e/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3?node-id=570-39752&t=q71JbxSPjtZZ7HBO-0 |
 | **API** | `POST /api/admin/master/service-types` (新規登録)<br>`PUT /api/admin/master/service-types/{id}` (編集) |
 | **ユーザー** | 管理者 |
@@ -444,60 +444,42 @@
 管理者機能
   /admin/dashboard
   /admin/accounts
-  /admin/accounts/new
   /admin/partners
   /admin/partners/:id
-  /admin/partners/new
-  /admin/partners/:id/edit
   /admin/services
   /admin/services/:id
-  /admin/services/new
-  /admin/services/:id/edit
   /admin/master/support-types
-  /admin/master/support-types/new
-  /admin/master/support-types/:id/edit
   /admin/master/service-types
-  /admin/master/service-types/new
-  /admin/master/service-types/:id/edit
 
 オペレータ機能
   /operator/dashboard
   /operator/customers
   /operator/customers/:id
-  /operator/customers/new
   /operator/cases
   /operator/cases/:id
-  /operator/cases/new
-  /operator/cases/:id/edit
 
 パートナー機能
   /partner/dashboard
   /partner/customers
   /partner/customers/:id
-  /partner/customers/new
-  /partner/customers/:id/edit
   /partner/cases
   /partner/cases/:id
-  /partner/cases/new
-  /partner/cases/:id/edit
   /partner/concierges
   /partner/concierges/:id
-  /partner/concierges/new
-  /partner/concierges/:id/edit
   /partner/store
 
 コンシェルジュ機能
   /concierge/dashboard
   /concierge/cases
   /concierge/cases/:id
-  /concierge/cases/new
-  /concierge/cases/:id/edit
   /concierge/cases/:id/report
   /concierge/reports
 
 その他
   /error
 ```
+
+**注**: モーダル画面（新規作成・編集）は上記の一覧画面の URL で表示されます
 
 ---
 
